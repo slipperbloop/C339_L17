@@ -1,41 +1,22 @@
-<!doctype html>
-<!-- Best Practices: Use <!doctype html> to ensure standards mode -->
+<!-- fix : Page lacks the HTML doctype, thus triggering quirks mode -->
+<!DOCTYPE html>
 
+<!-- fix : <html> element does not have a [lang] attribute -->
 <html lang="en">
-<!-- Accessibility/SEO: Provide page language for screen readers and search engines -->
 
 <head>
-  <meta charset="utf-8" />
-  <!-- Best Practices: Define character encoding -->
+  <!-- fix : Does not have a <meta name="viewport"> tag with width or initial-scale -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Best Practices/SEO: Ensure proper mobile scaling -->
+  <!-- fix : Document does not have a meta description -->
+  <meta name="description" content="Description of the web page.">
 
-  <title>Test 001</title>
-  <!-- SEO: Title is required for a strong SEO score and tab labeling -->
-
-  <meta name="description" content="A minimal Lighthouse test page optimized for Performance, Accessibility, Best Practices and SEO." />
-  <!-- SEO: Provide a meta description -->
-
-  <meta name="robots" content="index,follow" />
-  <!-- SEO: Allow indexing (not strictly required, but safe and clear) -->
-
-  <style>
-    /* Performance: No external CSS/fonts. Keep render fast and avoid layout shifts */
-    body {
-      margin: 0;
-      padding: 2rem;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      line-height: 1.5;
-    }
-  </style>
+  <!-- fix : Document doesn't have a <title> element -->
+  <title>Descriptive title for the webpage</title>
 </head>
 
 <body>
-  <main>
-    <!-- Accessibility: Fixes “Document does not have a main landmark” by adding <main> -->
-    <h1>Hello World!</h1>
-    <p>This page is structured to score 100 across Lighthouse categories.</p>
-  </main>
+  Hello World!
 </body>
+
 </html>
