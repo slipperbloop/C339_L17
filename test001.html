@@ -1,58 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- Best Practices: Use <!doctype html> to ensure standards mode -->
+
 <html lang="en">
+<!-- Accessibility/SEO: Provide page language for screen readers and search engines -->
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <!-- Best Practices: Define character encoding -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Best Practices/SEO: Ensure proper mobile scaling -->
 
   <title>Test 001</title>
+  <!-- SEO: Title is required for a strong SEO score and tab labeling -->
 
-  <meta name="description" content="Test page for Lighthouse performance, accessibility, best practices and SEO.">
+  <meta name="description" content="A minimal Lighthouse test page optimized for Performance, Accessibility, Best Practices and SEO." />
+  <!-- SEO: Provide a meta description -->
+
+  <meta name="robots" content="index,follow" />
+  <!-- SEO: Allow indexing (not strictly required, but safe and clear) -->
 
   <style>
+    /* Performance: No external CSS/fonts. Keep render fast and avoid layout shifts */
     body {
-      font-family: system-ui, Arial, sans-serif;
       margin: 0;
       padding: 2rem;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.5;
     }
   </style>
 </head>
 
 <body>
   <main>
+    <!-- Accessibility: Fixes “Document does not have a main landmark” by adding <main> -->
     <h1>Hello World!</h1>
-    <p>Lighthouse test page.</p>
-  </main>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <!-- Best Practices -->
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Best Practices / Mobile -->
-
-  <title>Test 001</title>
-  <!-- SEO -->
-
-  <meta name="description" content="Test page for Lighthouse performance, accessibility, best practices and SEO.">
-  <!-- SEO -->
-
-  <!-- Performance: prevent layout shifts -->
-  <style>
-    body {
-      font-family: system-ui, Arial, sans-serif;
-      margin: 0;
-      padding: 2rem;
-    }
-  </style>
-</head>
-
-<body>
-  <main>
-    <!-- Accessibility: main landmark -->
-    <h1>Hello World!</h1>
-    <p>Lighthouse test page.</p>
+    <p>This page is structured to score 100 across Lighthouse categories.</p>
   </main>
 </body>
 </html>
