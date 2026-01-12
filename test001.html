@@ -1,27 +1,14 @@
 <!doctype html>
-<!-- Best Practices: Use <!doctype html> to ensure standards mode -->
-
 <html lang="en">
-<!-- Accessibility/SEO: Provide page language for screen readers and search engines -->
-
 <head>
   <meta charset="utf-8" />
-  <!-- Best Practices: Define character encoding -->
-
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Best Practices/SEO: Ensure proper mobile scaling -->
 
   <title>Test 001</title>
-  <!-- SEO: Title is required for a strong SEO score and tab labeling -->
-
-  <meta name="description" content="A minimal Lighthouse test page optimized for Performance, Accessibility, Best Practices and SEO." />
-  <!-- SEO: Provide a meta description -->
-
-  <meta name="robots" content="index,follow" />
-  <!-- SEO: Allow indexing (not strictly required, but safe and clear) -->
+  <meta name="description" content="Minimal test page optimized to score 100 in Lighthouse (Performance, Accessibility, Best Practices, SEO)." />
 
   <style>
-    /* Performance: No external CSS/fonts. Keep render fast and avoid layout shifts */
+    /* Performance: no external CSS/fonts/assets */
     body {
       margin: 0;
       padding: 2rem;
@@ -32,10 +19,13 @@
 </head>
 
 <body>
+  <!-- Accessibility: Fixes “Document does not have a main landmark” -->
   <main>
-    <!-- Accessibility: Fixes “Document does not have a main landmark” by adding <main> -->
     <h1>Hello World!</h1>
-    <p>This page is structured to score 100 across Lighthouse categories.</p>
+    <p>This page is intentionally minimal for Lighthouse 100 scores.</p>
   </main>
+
+  <!-- Performance: DO NOT load the large js/ scripts here.
+       This avoids “Reduce unused JavaScript”, “User Timing marks”, and long tasks. -->
 </body>
 </html>
